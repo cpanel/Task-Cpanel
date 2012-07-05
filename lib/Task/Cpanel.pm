@@ -1,20 +1,28 @@
+# Copyright (c) 2012, cPanel, Inc.
+# All rights reserved.
+# http://cpanel.net
+#
+# This is free software; you can redistribute it and/or modify it under the
+# same terms as Perl itself. See L<perlartistic>.
+
 package Task::Cpanel;
 
-#use 5.014;
 use strict;
 use warnings;
 
 =head1 NAME
 
-Task::Cpanel - This module provides a spec of all packages needed for functionality and development with cPanel & WHM and EasyApache. The first two numbers of this version (eg: 11.34) refer to the major version of cPanel which it applies to.
+Task::Cpanel - Brings in all Perl modules which are RPM packaged and shipped with B<cPanel & WHM> and B<EasyApache>.
 
 =head1 SYNOPSIS
 
-cpan Task::Cpanel;
+    cpan Task::Cpanel;
 
 =head1 DESCRIPTION
 
-This package includes all of the Task::Cpanel family of packages.
+Installation of this package brings in all Perl modules which are RPM packaged and shipped with B<cPanel & WHM> and B<EasyApache>.
+
+The first two numbers of this version (eg: 11.36) refer to the major version of B<cPanel & WHM> it applies to.
 
 =head2 MODULES NEEDED
 
@@ -44,17 +52,9 @@ Modules provided for core cPanel support
 
 use Task::Cpanel::Core;
 
-=item L<Task::Cpanel::EA|Task::Cpanel::EA>
-
-Modules provided for EasyApache support
-
-=cut
-
-use Task::Cpanel::EA;
-
 =item L<Task::Cpanel::Internal|Task::Cpanel::Internal>
 
-Modules provided for cPanel & WHM development by cPanel
+Modules provided for B<cPanel & WHM> development by cPanel
 
 =cut
 
@@ -62,7 +62,7 @@ use Task::Cpanel::Internal;
 
 =item L<Task::Cpanel::Kensho|Task::Cpanel::Kensho>
 
-Modules provided by Task::Kensho
+All modules provided by Task::Kensho
 
 =cut
 
@@ -72,22 +72,19 @@ use Task::Cpanel::Kensho;
 
 =head1 AUTHOR
 
-cPanel, C<< <kyle.lafkoff at cpanel.net> >>
+cPanel, C<< <cpanel at cpan.org> >>
 
 =head1 BUGS
 
-Please report any bugs or feature requests to C<bug-task-cpanel-ea at rt.cpan.org>, or through
-the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Task-Cpanel-EA>.  I will be notified, and then you'll
-automatically be notified of progress on your bug as I make changes.
-
-
-
+Please report any bugs or feature requests to C<bug-task-cpanel at rt.cpan.org>, or through
+the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Task-Cpanel>.  We will be notified, and then you'll
+automatically be notified of progress on your bug as we make changes.
 
 =head1 SUPPORT
 
 You can find documentation for this module with the perldoc command.
 
-    perldoc Task::Cpanel::EA
+    perldoc Task::Cpanel
 
 
 You can also look for information at:
@@ -96,19 +93,19 @@ You can also look for information at:
 
 =item * RT: CPAN's request tracker (report bugs here)
 
-L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=Task-Cpanel-EA>
+L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=Task-Cpanel>
 
 =item * AnnoCPAN: Annotated CPAN documentation
 
-L<http://annocpan.org/dist/Task-Cpanel-EA>
+L<http://annocpan.org/dist/Task-Cpanel>
 
 =item * CPAN Ratings
 
-L<http://cpanratings.perl.org/d/Task-Cpanel-EA>
+L<http://cpanratings.perl.org/d/Task-Cpanel>
 
-=item * Search CPAN
+=item * Meta CPAN
 
-L<http://search.cpan.org/dist/Task-Cpanel-EA/>
+L<http://metacpan.org/module/Task-Cpanel>
 
 =back
 
@@ -120,13 +117,16 @@ L<http://search.cpan.org/dist/Task-Cpanel-EA/>
 
 Copyright 2012 cPanel.
 
-This program is free software; you can redistribute it and/or modify it
-under the terms of either: the GNU General Public License as published
-by the Free Software Foundation; or the Artistic License.
+All rights reserved
+
+http://cpanel.net
+
+This is free software; you can redistribute it and/or modify it under the
+same terms as Perl itself. See L<perlartistic>.                  
 
 See http://dev.perl.org/licenses/ for more information.
 
 
 =cut
 
-1; # End of Task::Cpanel::EA
+1; # End of Task::Cpanel
